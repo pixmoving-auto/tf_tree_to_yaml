@@ -12,7 +12,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     parent_frame = DeclareLaunchArgument('parent_frame', default_value='sensor_top')
-    child_frame = DeclareLaunchArgument('child_frame', default_value='[os_lidar_fl, os_lidar_fr]')
+    child_frame = DeclareLaunchArgument('child_frame', default_value='[os_lidar_fl, os_lidar_fr, os_lidar_rl, os_lidar_rr]')
     output_yaml_file = DeclareLaunchArgument('output_yaml_file', default_value='tf_tree.yaml')
     
     node = Node(
